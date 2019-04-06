@@ -1,0 +1,18 @@
+User clicks to open different tab that change the page content
+
+
+2. BUtton clicks trigger the flow of data:
+
+Users: click to a button (eg: add new button)
+
+Actions: using type ,descibe the change of the state with extra data for example: username  and password. This action is dispatched to transition to new state
+
+Reduces: take action with initial state and update the state. Tstate is immutable in Redux, always return the new open
+
+Store: all update from reducers get pass as arguments to the store, only one store exists. The store is essentially all your application states/data
+
+Provider: this make the store avaialble to all React container. Connect funtion happens: (eg: mapStateToProps(), map DispatchToprop())
+
+Container: fetch apps state datat and use it to render component. The app state will become component prop here
+
+Component:component created that user will interact , eg: form, buttons
